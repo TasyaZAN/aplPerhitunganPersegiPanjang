@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="325dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sifat_bangun_datar_persegi_panjang" />
+
+    <TextView
+        android:id="@+id/txtjdl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="APLIKASI PERHITUNGAN PERSEGI PANJANG"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gradasi"
+        android:hint="Panjang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambar" />
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="84dp"
+        android:hint="Lebar"
+        android:background="@drawable/gradasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gambar" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="256dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lebar">
+
+        <RadioButton
+            android:id="@+id/RBluas"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:text="LUAS" />
+
+        <RadioButton
+            android:id="@+id/RBkeliling"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="KELILING" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonhHSL"
+        android:layout_width="241dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:text="HASIL"
+        app:cornerRadius="15dp"
+        android:backgroundTint="#ffff00"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txthsl"
+        android:layout_width="94dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="56dp"
+        android:text="0"
+        android:textColor="#d4a328"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonhHSL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
